@@ -1,3 +1,7 @@
+{{
+ config(materialized = 'table', file_format = 'delta')
+}}
+
 select
   user_id,
   sum(amount)
