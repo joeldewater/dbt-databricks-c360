@@ -17,9 +17,12 @@ models:
       - name: order_id
         tests:
           - unique
+
       - name: user_id
         tests:
-          - not_null
+          - not_null:
+            config:
+              serverity: error
           - relationships:
               to: ref('dbt_c360_silver_users')
               field: user_id
