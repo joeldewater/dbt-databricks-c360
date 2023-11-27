@@ -24,6 +24,17 @@ models:
               config:
                 severity: warn
 
+  - name: apple_views_events
+    columns:
+      - name: action
+        tests:
+          - accepted_values:
+            values: ['view']
+      - name: platform
+        tests:
+          - accepted_values:
+            values: ['ios']
+
               
               
               
