@@ -29,11 +29,11 @@ models:
       - name: action
         tests:
           - accepted_values:
-            values: ['view']
+              values: ['view']
       - name: platform
         tests:
           - accepted_values:
-            values: ['ios']
+             values: ['ios']
 
               
               
