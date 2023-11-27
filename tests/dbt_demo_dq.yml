@@ -1,13 +1,11 @@
 version: 1
 
-sources:
-  - name: dbdemos
-    tables:
-    - name: <dbt_c360_bronze_orders>
-      columns:
-        - name: id
-          tests:
-            - unique
-        - name: user_id
-          tests:
-            - not_null
+models:
+  - name: event_count_by_platform
+    columns:
+      - name: id
+        tests:
+          - unique
+      - name: user_id
+        tests:
+          - not_null
