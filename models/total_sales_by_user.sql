@@ -1,5 +1,5 @@
 {{
- config(materialized = 'table', file_format = 'delta', target_schema = "dbdemos-jdw")
+ config(materialized = 'table', file_format = 'delta', schema = "dbdemos-jdw")
 }}
 
 select
