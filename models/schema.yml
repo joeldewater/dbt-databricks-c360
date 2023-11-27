@@ -21,14 +21,11 @@ models:
       - name: user_id
         tests:
           - not_null:
-            config:
-              serverity: error
+              config:
+                serverity: error
           - relationships:
               to: ref('dbt_c360_silver_users')
               field: user_id
-              
-              
-              
               
               
               
