@@ -26,8 +26,6 @@ models:
           - relationships:
               to: ref('dbt_c360_silver_users')
               field: user_id
-                config:
-                  severity: warn
               
               
               
