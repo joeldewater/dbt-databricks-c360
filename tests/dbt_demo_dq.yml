@@ -1,0 +1,11 @@
+version: 1
+
+models:
+  - name: dbdemos.dbt_c360_bronze_orders
+    columns:
+      - name: id
+        tests:
+          - unique
+      - name: user_id
+        tests:
+          - not_null
