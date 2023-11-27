@@ -22,7 +22,7 @@ models:
         tests:
           - not_null:
               config:
-                serverity: error
+                severity: error
           - relationships:
               to: ref('dbt_c360_silver_users')
               field: user_id
