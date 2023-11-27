@@ -33,7 +33,7 @@ models:
       - name: platform
         tests:
           - accepted_values:
-             values: ['ios']
+              values: ['ios']
 
               
               
